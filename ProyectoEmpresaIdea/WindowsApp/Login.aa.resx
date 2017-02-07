@@ -136,6 +136,9 @@
   <data name="btncancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>421, 227</value>
   </data>
+  <data name="btncancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 23</value>
+  </data>
   <data name="btnregistro.Location" type="System.Drawing.Point, System.Drawing">
     <value>367, 281</value>
   </data>
