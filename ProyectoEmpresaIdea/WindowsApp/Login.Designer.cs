@@ -29,86 +29,83 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.txtcorreo = new System.Windows.Forms.TextBox();
+            this.lblusuario = new System.Windows.Forms.Label();
+            this.lblcontraseña = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBoxbtniniciar = new System.Windows.Forms.PictureBox();
-            this.pictureBoxbtnregitrar = new System.Windows.Forms.PictureBox();
-            this.pictureBoxbtncancelar = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxbtniniciar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxbtnregitrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxbtncancelar)).BeginInit();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btniniciar = new System.Windows.Forms.Button();
+            this.btncancelar = new System.Windows.Forms.Button();
+            this.btnregistro = new System.Windows.Forms.Button();
+            this.lbltexto = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtcorreo
+            // lblusuario
             // 
-            this.txtcorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcorreo.Location = new System.Drawing.Point(78, 214);
-            this.txtcorreo.Multiline = true;
-            this.txtcorreo.Name = "txtcorreo";
-            this.txtcorreo.Size = new System.Drawing.Size(277, 31);
-            this.txtcorreo.TabIndex = 0;
-            this.txtcorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            resources.ApplyResources(this.lblusuario, "lblusuario");
+            this.lblusuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblusuario.ForeColor = System.Drawing.Color.White;
+            this.lblusuario.Name = "lblusuario";
+            // 
+            // lblcontraseña
+            // 
+            resources.ApplyResources(this.lblcontraseña, "lblcontraseña");
+            this.lblcontraseña.BackColor = System.Drawing.Color.Transparent;
+            this.lblcontraseña.ForeColor = System.Drawing.Color.White;
+            this.lblcontraseña.Name = "lblcontraseña";
             // 
             // textBox1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(78, 285);
-            this.textBox1.Multiline = true;
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 31);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBoxbtniniciar
+            // textBox2
             // 
-            this.pictureBoxbtniniciar.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxbtniniciar.Location = new System.Drawing.Point(24, 382);
-            this.pictureBoxbtniniciar.Name = "pictureBoxbtniniciar";
-            this.pictureBoxbtniniciar.Size = new System.Drawing.Size(79, 37);
-            this.pictureBoxbtniniciar.TabIndex = 1;
-            this.pictureBoxbtniniciar.TabStop = false;
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            this.textBox2.UseSystemPasswordChar = true;
             // 
-            // pictureBoxbtnregitrar
+            // btniniciar
             // 
-            this.pictureBoxbtnregitrar.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxbtnregitrar.Location = new System.Drawing.Point(129, 382);
-            this.pictureBoxbtnregitrar.Name = "pictureBoxbtnregitrar";
-            this.pictureBoxbtnregitrar.Size = new System.Drawing.Size(84, 37);
-            this.pictureBoxbtnregitrar.TabIndex = 1;
-            this.pictureBoxbtnregitrar.TabStop = false;
+            resources.ApplyResources(this.btniniciar, "btniniciar");
+            this.btniniciar.Name = "btniniciar";
+            this.btniniciar.UseVisualStyleBackColor = true;
             // 
-            // pictureBoxbtncancelar
+            // btncancelar
             // 
-            this.pictureBoxbtncancelar.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxbtncancelar.Location = new System.Drawing.Point(235, 382);
-            this.pictureBoxbtncancelar.Name = "pictureBoxbtncancelar";
-            this.pictureBoxbtncancelar.Size = new System.Drawing.Size(92, 37);
-            this.pictureBoxbtncancelar.TabIndex = 1;
-            this.pictureBoxbtncancelar.TabStop = false;
+            resources.ApplyResources(this.btncancelar, "btncancelar");
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnregistro
+            // 
+            resources.ApplyResources(this.btnregistro, "btnregistro");
+            this.btnregistro.Name = "btnregistro";
+            this.btnregistro.UseVisualStyleBackColor = true;
+            // 
+            // lbltexto
+            // 
+            resources.ApplyResources(this.lbltexto, "lbltexto");
+            this.lbltexto.BackColor = System.Drawing.Color.Transparent;
+            this.lbltexto.ForeColor = System.Drawing.Color.White;
+            this.lbltexto.Name = "lbltexto";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(375, 503);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBoxbtncancelar);
-            this.Controls.Add(this.pictureBoxbtnregitrar);
-            this.Controls.Add(this.pictureBoxbtniniciar);
+            this.Controls.Add(this.lbltexto);
+            this.Controls.Add(this.btnregistro);
+            this.Controls.Add(this.btncancelar);
+            this.Controls.Add(this.btniniciar);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txtcorreo);
+            this.Controls.Add(this.lblcontraseña);
+            this.Controls.Add(this.lblusuario);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GYM UTE";
             this.TransparencyKey = System.Drawing.SystemColors.Control;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxbtniniciar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxbtnregitrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxbtncancelar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,10 +113,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtcorreo;
+        private System.Windows.Forms.Label lblusuario;
+        private System.Windows.Forms.Label lblcontraseña;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBoxbtniniciar;
-        private System.Windows.Forms.PictureBox pictureBoxbtnregitrar;
-        private System.Windows.Forms.PictureBox pictureBoxbtncancelar;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btniniciar;
+        private System.Windows.Forms.Button btncancelar;
+        private System.Windows.Forms.Button btnregistro;
+        private System.Windows.Forms.Label lbltexto;
     }
 }
