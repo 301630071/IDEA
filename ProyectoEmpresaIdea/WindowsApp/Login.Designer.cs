@@ -37,6 +37,7 @@
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnregistro = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbltexto = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,11 +92,19 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // lbltexto
+            // 
+            resources.ApplyResources(this.lbltexto, "lbltexto");
+            this.lbltexto.BackColor = System.Drawing.Color.Transparent;
+            this.lbltexto.ForeColor = System.Drawing.Color.White;
+            this.lbltexto.Name = "lbltexto";
+            // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.lbltexto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnregistro);
             this.Controls.Add(this.btncancelar);
@@ -124,5 +133,6 @@
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnregistro;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbltexto;
     }
 }
