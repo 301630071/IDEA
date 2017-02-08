@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAcessLayer", "DataAcessLayer\DataAcessLayer.csproj", "{379EF6FB-EE8C-4C37-8739-F4A8FF4C534F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApp", "WindowsApp\WindowsApp.csproj", "{44D97571-F9A5-4BD3-8F3D-01399DE4A002}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{379EF6FB-EE8C-4C37-8739-F4A8FF4C534F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{379EF6FB-EE8C-4C37-8739-F4A8FF4C534F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{379EF6FB-EE8C-4C37-8739-F4A8FF4C534F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44D97571-F9A5-4BD3-8F3D-01399DE4A002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44D97571-F9A5-4BD3-8F3D-01399DE4A002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44D97571-F9A5-4BD3-8F3D-01399DE4A002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44D97571-F9A5-4BD3-8F3D-01399DE4A002}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
