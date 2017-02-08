@@ -36,7 +36,8 @@
             this.btniniciar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnregistro = new System.Windows.Forms.Button();
-            this.lbltexto = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblusuario
@@ -82,19 +83,20 @@
             this.btnregistro.Name = "btnregistro";
             this.btnregistro.UseVisualStyleBackColor = true;
             // 
-            // lbltexto
+            // pictureBox1
             // 
-            resources.ApplyResources(this.lbltexto, "lbltexto");
-            this.lbltexto.BackColor = System.Drawing.Color.Transparent;
-            this.lbltexto.ForeColor = System.Drawing.Color.White;
-            this.lbltexto.Name = "lbltexto";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::WindowsApp.Properties.Resources.LogoFinal1;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
-            this.Controls.Add(this.lbltexto);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnregistro);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btniniciar);
@@ -106,6 +108,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.TransparencyKey = System.Drawing.SystemColors.Control;
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,6 +123,6 @@
         private System.Windows.Forms.Button btniniciar;
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnregistro;
-        private System.Windows.Forms.Label lbltexto;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
