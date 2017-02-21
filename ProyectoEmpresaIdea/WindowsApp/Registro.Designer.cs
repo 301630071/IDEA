@@ -47,6 +47,8 @@
             this.lblReContraseña = new System.Windows.Forms.Label();
             this.txtPassword1 = new System.Windows.Forms.TextBox();
             this.txtPassword2 = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.lblCorreo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +57,7 @@
             this.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(145, 335);
+            this.btnRegistrar.Location = new System.Drawing.Point(145, 360);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(87, 37);
             this.btnRegistrar.TabIndex = 0;
@@ -68,7 +70,7 @@
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(249, 335);
+            this.btnSalir.Location = new System.Drawing.Point(249, 360);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(87, 37);
             this.btnSalir.TabIndex = 1;
@@ -204,7 +206,7 @@
             this.pictureBox1.Image = global::WindowsApp.Properties.Resources.LogoFinal2;
             this.pictureBox1.Location = new System.Drawing.Point(142, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(202, 94);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -250,14 +252,36 @@
             this.txtPassword2.TabIndex = 19;
             this.txtPassword2.UseSystemPasswordChar = true;
             // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Location = new System.Drawing.Point(145, 322);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(191, 21);
+            this.txtCorreo.TabIndex = 21;
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCorreo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.ForeColor = System.Drawing.Color.White;
+            this.lblCorreo.Location = new System.Drawing.Point(12, 327);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(111, 15);
+            this.lblCorreo.TabIndex = 20;
+            this.lblCorreo.Text = "Correo Electronico:";
+            // 
             // Registar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsApp.Properties.Resources.Registro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(703, 400);
+            this.ClientSize = new System.Drawing.Size(703, 416);
             this.ControlBox = false;
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.txtPassword2);
             this.Controls.Add(this.txtPassword1);
             this.Controls.Add(this.lblReContraseña);
@@ -309,5 +333,7 @@
         private System.Windows.Forms.Label lblReContraseña;
         private System.Windows.Forms.TextBox txtPassword1;
         private System.Windows.Forms.TextBox txtPassword2;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.Label lblCorreo;
     }
 }
