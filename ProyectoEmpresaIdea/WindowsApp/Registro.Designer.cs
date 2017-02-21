@@ -36,17 +36,17 @@
             this.lblApellidoM = new System.Windows.Forms.Label();
             this.lblCarrera = new System.Windows.Forms.Label();
             this.lblGrado = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellidoP = new System.Windows.Forms.TextBox();
+            this.txtApellidoM = new System.Windows.Forms.TextBox();
             this.cboCarrera = new System.Windows.Forms.ComboBox();
             this.cboGrado = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.lblReContraseña = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPassword1 = new System.Windows.Forms.TextBox();
+            this.txtPassword2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@
             this.btnRegistrar.TabIndex = 0;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // btnSalir
             // 
@@ -147,37 +148,37 @@
             this.lblGrado.TabIndex = 7;
             this.lblGrado.Text = "Grado:";
             // 
-            // textBox1
+            // txtMatricula
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(145, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 21);
-            this.textBox1.TabIndex = 8;
+            this.txtMatricula.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatricula.Location = new System.Drawing.Point(145, 116);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(191, 21);
+            this.txtMatricula.TabIndex = 8;
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(145, 141);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 21);
-            this.textBox2.TabIndex = 9;
+            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(145, 141);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(191, 21);
+            this.txtNombre.TabIndex = 9;
             // 
-            // textBox3
+            // txtApellidoP
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(145, 166);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 21);
-            this.textBox3.TabIndex = 10;
+            this.txtApellidoP.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidoP.Location = new System.Drawing.Point(145, 166);
+            this.txtApellidoP.Name = "txtApellidoP";
+            this.txtApellidoP.Size = new System.Drawing.Size(191, 21);
+            this.txtApellidoP.TabIndex = 10;
             // 
-            // textBox4
+            // txtApellidoM
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(145, 191);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(191, 21);
-            this.textBox4.TabIndex = 11;
+            this.txtApellidoM.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidoM.Location = new System.Drawing.Point(145, 191);
+            this.txtApellidoM.Name = "txtApellidoM";
+            this.txtApellidoM.Size = new System.Drawing.Size(191, 21);
+            this.txtApellidoM.TabIndex = 11;
             // 
             // cboCarrera
             // 
@@ -231,23 +232,23 @@
             this.lblReContraseña.TabIndex = 17;
             this.lblReContraseña.Text = "Reingrese Contraseña:";
             // 
-            // textBox5
+            // txtPassword1
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(145, 272);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(191, 21);
-            this.textBox5.TabIndex = 18;
-            this.textBox5.UseSystemPasswordChar = true;
+            this.txtPassword1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword1.Location = new System.Drawing.Point(145, 272);
+            this.txtPassword1.Name = "txtPassword1";
+            this.txtPassword1.Size = new System.Drawing.Size(191, 21);
+            this.txtPassword1.TabIndex = 18;
+            this.txtPassword1.UseSystemPasswordChar = true;
             // 
-            // textBox6
+            // txtPassword2
             // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(145, 297);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(191, 21);
-            this.textBox6.TabIndex = 19;
-            this.textBox6.UseSystemPasswordChar = true;
+            this.txtPassword2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword2.Location = new System.Drawing.Point(145, 297);
+            this.txtPassword2.Name = "txtPassword2";
+            this.txtPassword2.Size = new System.Drawing.Size(191, 21);
+            this.txtPassword2.TabIndex = 19;
+            this.txtPassword2.UseSystemPasswordChar = true;
             // 
             // Registar
             // 
@@ -257,17 +258,17 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(703, 400);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtPassword2);
+            this.Controls.Add(this.txtPassword1);
             this.Controls.Add(this.lblReContraseña);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cboGrado);
             this.Controls.Add(this.cboCarrera);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtApellidoM);
+            this.Controls.Add(this.txtApellidoP);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.lblGrado);
             this.Controls.Add(this.lblCarrera);
             this.Controls.Add(this.lblApellidoM);
@@ -297,16 +298,16 @@
         private System.Windows.Forms.Label lblApellidoM;
         private System.Windows.Forms.Label lblCarrera;
         private System.Windows.Forms.Label lblGrado;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtMatricula;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellidoP;
+        private System.Windows.Forms.TextBox txtApellidoM;
         private System.Windows.Forms.ComboBox cboCarrera;
         private System.Windows.Forms.ComboBox cboGrado;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Label lblReContraseña;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPassword1;
+        private System.Windows.Forms.TextBox txtPassword2;
     }
 }

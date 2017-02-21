@@ -12,6 +12,15 @@ namespace WindowsApp
 {
     public partial class Registar : Form
     {
+        static int Matricula;
+        static string Nombre;
+        static string ApellidoP;
+        static string ApellidoM;
+        static string Carrera;
+        static int Grado;
+        static string password1;
+        static string password2;
+
         public Registar()
         {
             InitializeComponent();
@@ -42,6 +51,24 @@ namespace WindowsApp
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        { 
+            Matricula = Convert.ToInt32(txtMatricula.Text);
+            txtMatricula.Text = " ";
+            Nombre = txtNombre.Text;
+            txtNombre.Text = " ";
+            ApellidoP = txtApellidoP.Text;
+            txtApellidoP.Text = " ";
+            ApellidoM = txtApellidoM.Text;
+            txtApellidoM.Text = " ";
+            Carrera = cboCarrera.SelectedItem.ToString();
+            cboCarrera.SelectedIndex = -1;
+       
+            MessageBox.Show(Matricula + "\n" + Nombre + "\n" + ApellidoP + "\n" + ApellidoM 
+                 + "\n" + Carrera);
+            
         }
     }
 }
