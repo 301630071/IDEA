@@ -17,9 +17,9 @@ namespace WindowsApp
         static string ApellidoP;
         static string ApellidoM;
         static string Carrera;
-        static int Grado;
-        static string password1;
-        static string password2;
+        static string Grado;
+        static string Password1;
+        static string Password2;
 
         public Registar()
         {
@@ -65,9 +65,17 @@ namespace WindowsApp
             txtApellidoM.Text = " ";
             Carrera = cboCarrera.SelectedItem.ToString();
             cboCarrera.SelectedIndex = -1;
-       
+            Grado = cboGrado.SelectedItem.ToString();
+            cboGrado.SelectedIndex = -1;
+            Password1 = txtPassword1.Text;
+            txtPassword1.Text = " ";
+            Password2 = txtPassword2.Text;
+            txtPassword2.Text = " ";
+
+ 
+
             MessageBox.Show(Matricula + "\n" + Nombre + "\n" + ApellidoP + "\n" + ApellidoM 
-                 + "\n" + Carrera);
+                 + "\n" + Carrera + "\n" + Grado + "\n" + Password1 + "\n" + Password2 );
             
         }
     }

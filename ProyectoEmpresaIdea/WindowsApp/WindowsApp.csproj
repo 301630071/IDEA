@@ -124,6 +124,16 @@
   <ItemGroup>
     <None Include="Resources\LogoFinal2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BussinessLogicLayer\BussinessLogicLayer.csproj">
+      <Project>{7c7701fd-ce43-4494-9f75-84a59fd0bd6d}</Project>
+      <Name>BussinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{29132a3a-4542-4c09-8351-92ab349e7c1d}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
