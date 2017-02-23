@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.lblusuario = new System.Windows.Forms.Label();
             this.lblcontraseña = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btniniciar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnregistro = new System.Windows.Forms.Button();
@@ -55,22 +55,23 @@
             this.lblcontraseña.ForeColor = System.Drawing.Color.White;
             this.lblcontraseña.Name = "lblcontraseña";
             // 
-            // textBox1
+            // txtMatricula
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.txtMatricula, "txtMatricula");
+            this.txtMatricula.Name = "txtMatricula";
             // 
-            // textBox2
+            // txtPassword
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            this.textBox2.UseSystemPasswordChar = true;
+            resources.ApplyResources(this.txtPassword, "txtPassword");
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btniniciar
             // 
             resources.ApplyResources(this.btniniciar, "btniniciar");
             this.btniniciar.Name = "btniniciar";
             this.btniniciar.UseVisualStyleBackColor = true;
+            this.btniniciar.Click += new System.EventHandler(this.btniniciar_Click);
             // 
             // btncancelar
             // 
@@ -109,8 +110,8 @@
             this.Controls.Add(this.btnregistro);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btniniciar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.lblcontraseña);
             this.Controls.Add(this.lblusuario);
             this.DoubleBuffered = true;
@@ -127,8 +128,8 @@
 
         private System.Windows.Forms.Label lblusuario;
         private System.Windows.Forms.Label lblcontraseña;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMatricula;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btniniciar;
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnregistro;

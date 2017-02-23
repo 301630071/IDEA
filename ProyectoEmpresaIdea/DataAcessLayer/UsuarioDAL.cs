@@ -13,8 +13,8 @@ namespace DataAcessLayer
         // Clase contexto que enlaza la Base de Datos por entity framework
         private static IdeaContext db = new IdeaContext();
         public static string CONNECTIONSTRING = "server=localhost;user id=root;pwd=melapelas5225.;persistsecurityinfo=True;database=idea";
-
-        public static bool iniciarSesion(int user, string pwd)
+        #region iniciarSesion
+        public static bool iniciarSesion(int matricula, string pwd)
         {
             //SELECT COUNT (*) FROM Usuario WHERE Matricula = usuario AND Password1 = pass
             //return db.Usuarios.Where(u => u.Matricula == user && u.Password1 == pass).Count() > 0;
@@ -29,14 +29,14 @@ namespace DataAcessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "SELECT * FROM Usuario WHERE Matricula = @username AND Password1 = @password";
+                string query = "SELECT * FROM Usuario WHERE Matricula = @matricula AND Password1 = @password";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
                 MySqlCommand cmd = new MySqlCommand(query, sqlConn);
 
                 //5° - Agregar los parametros necesarios
-                cmd.Parameters.AddWithValue("@username", user);
+                cmd.Parameters.AddWithValue("@matricula", matricula);
                 cmd.Parameters.AddWithValue("@password", pwd);
 
                 //6° - Ejecutar el query y guardar el resultado
@@ -58,8 +58,59 @@ namespace DataAcessLayer
                 return false;
             }
         }
-    }
+        #endregion
 
+        #region Registrar
+        public static bool Registrar(Usuario u)
+        {
+            //SELECT COUNT (*) FROM Usuario WHERE Matricula = usuario AND Password1 = pass
+            //return db.Usuarios.Where(u => u.Matricula == user && u.Password1 == pass).Count() > 0;
+            try
+            {
+                //1. Creamos objeto conexion y le pasamos la cadena de conexión
+                //ubicada en el archivo App.Config
+                MySqlConnection sqlConn = new MySqlConnection(CONNECTIONSTRING);
+
+
+                //2. Abrir la conexion
+                sqlConn.Open();
+
+                //3. Crear el query que utilizaras
+                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @password1, @password2, @correo )";
+
+                //4° - Crear el objeto comando al cual le pasas el query
+                //y la conexion para ejecutar el query antes mencionado
+                MySqlCommand cmd = new MySqlCommand(query, sqlConn);
+
+                //5° - Agregar los parametros necesarios
+                cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                cmd.Parameters.AddWithValue("@nombre", u.Nombre );
+                cmd.Parameters.AddWithValue("@apellidoP", u.Apellido1);
+                cmd.Parameters.AddWithValue("@apellidoM", u.Apellido2);
+                cmd.Parameters.AddWithValue("@password1", u.Password1);
+                cmd.Parameters.AddWithValue("@password2", u.Password2);
+                cmd.Parameters.AddWithValue("@correo", u.Correo);
+                //6° - Ejecutar el query y guardar el resultado
+                int ENQ = cmd.ExecuteNonQuery();
+
+                //7° - Validar si contiene registros
+                if (ENQ>0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                sqlConn.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+    }
+    #endregion
 }
 
 

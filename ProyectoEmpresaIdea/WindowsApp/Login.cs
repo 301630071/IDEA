@@ -17,9 +17,21 @@ namespace WindowsApp
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
+        private void btniniciar_Click(object sender, EventArgs e)
+        {
+            int matricula = Convert.ToInt32(txtMatricula.Text);
+            string contraseña = txtPassword.Text.ToString();
+            string mensaje = BussinessLogicLayer.UsuarioBLL.iniciarSesion(matricula, contraseña);
+
+            if (string.IsNullOrEmpty(mensaje))
+            {
+                MessageBox.Show("Bienvenido al Sistema de IDEA");
+            }
+            else
+            {
+                MessageBox.Show(mensaje);
+            }
         }
     }
 }

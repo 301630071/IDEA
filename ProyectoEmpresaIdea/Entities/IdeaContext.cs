@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class IdeaContext : DbContext
     {
         public IdeaContext() : base("IdeaContext")

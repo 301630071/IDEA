@@ -129,13 +129,13 @@
     <value>241, 150</value>
   </data>
   <data name="lblusuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 18</value>
+    <value>78, 18</value>
   </data>
   <data name="lblusuario.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="lblusuario.Text" xml:space="preserve">
-    <value>Usuario</value>
+    <value>Matricula</value>
   </data>
   <data name="&gt;&gt;lblusuario.Name" xml:space="preserve">
     <value>lblusuario</value>
@@ -179,49 +179,49 @@
   <data name="&gt;&gt;lblcontraseña.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtMatricula.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt, style=Bold</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtMatricula.Location" type="System.Drawing.Point, System.Drawing">
     <value>323, 150</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtMatricula.Size" type="System.Drawing.Size, System.Drawing">
     <value>173, 23</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtMatricula.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;txtMatricula.Name" xml:space="preserve">
+    <value>txtMatricula</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtMatricula.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtMatricula.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtMatricula.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>323, 191</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>173, 20</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
+    <value>txtPassword</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="btniniciar.Font" type="System.Drawing.Font, System.Drawing">
