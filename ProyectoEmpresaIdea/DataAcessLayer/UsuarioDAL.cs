@@ -63,8 +63,6 @@ namespace DataAcessLayer
         #region Registrar
         public static bool Registrar(Usuario u)
         {
-            //SELECT COUNT (*) FROM Usuario WHERE Matricula = usuario AND Password1 = pass
-            //return db.Usuarios.Where(u => u.Matricula == user && u.Password1 == pass).Count() > 0;
             try
             {
                 //1. Creamos objeto conexion y le pasamos la cadena de conexión
@@ -111,6 +109,8 @@ namespace DataAcessLayer
         }
     }
     #endregion
+
+    
 }
 
 

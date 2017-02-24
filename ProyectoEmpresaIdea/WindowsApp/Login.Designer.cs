@@ -78,12 +78,14 @@
             resources.ApplyResources(this.btncancelar, "btncancelar");
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnregistro
             // 
             resources.ApplyResources(this.btnregistro, "btnregistro");
             this.btnregistro.Name = "btnregistro";
             this.btnregistro.UseVisualStyleBackColor = true;
+            this.btnregistro.Click += new System.EventHandler(this.btnregistro_Click);
             // 
             // pictureBox1
             // 

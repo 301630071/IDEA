@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WindowsApp
 {
-    public partial class Registar : Form
+    public partial class Registrar : Form
     {
         static int Matricula;
         static string Nombre;
@@ -21,28 +21,28 @@ namespace WindowsApp
         static string Correo;
         static string Password1;
         static string Password2;
-        
 
-        public Registar()
+
+        public Registrar()
         {
             InitializeComponent();
 
-            //cboCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
-            //cboCarrera.Items.Add("TICSI");
-            //cboCarrera.Items.Add("QUIMICA");
-            //cboCarrera.Items.Add("LENGUA INGLESA");
-            //cboCarrera.Items.Add("MECATRONICA");
-            //cboCarrera.Items.Add("ENERGIAS RENOVABLES");
-            //cboCarrera.Items.Add("NANOTECNOLOGIA");
-            //cboCarrera.Items.Add("DESARROLLO DE NEGOCIOS");
+            cboCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboCarrera.Items.Add("TICSI");
+            cboCarrera.Items.Add("QUIMICA");
+            cboCarrera.Items.Add("LENGUA INGLESA");
+            cboCarrera.Items.Add("MECATRONICA");
+            cboCarrera.Items.Add("ENERGIAS RENOVABLES");
+            cboCarrera.Items.Add("NANOTECNOLOGIA");
+            cboCarrera.Items.Add("DESARROLLO DE NEGOCIOS");
 
-            //cboGrado.DropDownStyle = ComboBoxStyle.DropDownList;
-            //cboGrado.Items.Add("PRIMERO");
-            //cboGrado.Items.Add("SEGUNDO");
-            //cboGrado.Items.Add("TERCERO");
-            //cboGrado.Items.Add("CUARTO");
-            //cboGrado.Items.Add("QUINTO");
-            //cboGrado.Items.Add("SEXTO");
+            cboGrado.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboGrado.Items.Add("PRIMERO");
+            cboGrado.Items.Add("SEGUNDO");
+            cboGrado.Items.Add("TERCERO");
+            cboGrado.Items.Add("CUARTO");
+            cboGrado.Items.Add("QUINTO");
+            cboGrado.Items.Add("SEXTO");
         }
 
         private void Registar_Load(object sender, EventArgs e)
@@ -56,8 +56,8 @@ namespace WindowsApp
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
-        { 
-            Matricula = int.Parse(txtMatricula.Text);
+        {
+            Matricula = Convert.ToInt32(txtMatricula.Text);
             txtMatricula.Text = " ";
             Nombre = txtNombre.Text;
             txtNombre.Text = " ";
@@ -78,9 +78,10 @@ namespace WindowsApp
 
 
 
-            MessageBox.Show(Matricula + "\n" + Nombre + "\n" + ApellidoP + "\n" + ApellidoM 
-                 + "\n" + Carrera + "\n" + Grado + "\n" + Correo + "\n"+ Password1 + "\n" + Password2 );
-            
+
+            MessageBox.Show(Matricula + "\n" + Nombre + "\n" + ApellidoP + "\n" + ApellidoM
+                 + "\n" + Carrera + "\n" + Grado + "\n" + Correo + "\n" + Password1 + "\n" + Password2);
+
         }
     }
 }

@@ -33,5 +33,16 @@ namespace WindowsApp
                 MessageBox.Show(mensaje);
             }
         }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnregistro_Click(object sender, EventArgs e)
+        {
+            Registrar abrir = new Registrar();
+            abrir.Show();
+        }
     }
 }

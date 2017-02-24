@@ -1,6 +1,6 @@
 ﻿namespace WindowsApp
 {
-    partial class Registar
+    partial class Registrar
     {
         /// <summary>
         /// Required designer variable.
@@ -272,7 +272,7 @@
             this.lblCorreo.TabIndex = 20;
             this.lblCorreo.Text = "Correo Electronico:";
             // 
-            // Registar
+            // Registrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -302,7 +302,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnRegistrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Registar";
+            this.Name = "Registrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
             this.Load += new System.EventHandler(this.Registar_Load);
