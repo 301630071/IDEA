@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanAdmin));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +47,7 @@
             this.catalogoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(498, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(284, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -74,19 +75,19 @@
             // alumnosRegistradosToolStripMenuItem
             // 
             this.alumnosRegistradosToolStripMenuItem.Name = "alumnosRegistradosToolStripMenuItem";
-            this.alumnosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.alumnosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.alumnosRegistradosToolStripMenuItem.Text = "Alumnos Registrados";
             // 
             // entradaYSalidaToolStripMenuItem
             // 
             this.entradaYSalidaToolStripMenuItem.Name = "entradaYSalidaToolStripMenuItem";
-            this.entradaYSalidaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.entradaYSalidaToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.entradaYSalidaToolStripMenuItem.Text = "Entrada y Salida";
             // 
             // nuevoAlumnoToolStripMenuItem
             // 
             this.nuevoAlumnoToolStripMenuItem.Name = "nuevoAlumnoToolStripMenuItem";
-            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
+            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.nuevoAlumnoToolStripMenuItem.Text = "Nuevo Alumno";
             // 
             // entradaToolStripMenuItem
@@ -105,8 +106,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 414);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "VentanAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";

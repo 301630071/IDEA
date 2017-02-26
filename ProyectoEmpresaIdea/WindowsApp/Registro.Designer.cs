@@ -190,6 +190,7 @@
             this.cboCarrera.Name = "cboCarrera";
             this.cboCarrera.Size = new System.Drawing.Size(191, 24);
             this.cboCarrera.TabIndex = 12;
+            this.cboCarrera.SelectedIndexChanged += new System.EventHandler(this.cboCarrera_SelectedIndexChanged);
             // 
             // cboGrado
             // 

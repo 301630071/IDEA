@@ -83,5 +83,10 @@ namespace WindowsApp
                  + "\n" + Carrera + "\n" + Grado + "\n" + Correo + "\n" + Password1 + "\n" + Password2);
 
         }
+
+        private void cboCarrera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
