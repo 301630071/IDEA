@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.groupBoxNuevoAlumno = new System.Windows.Forms.GroupBox();
-            this.lblMatricula = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblApellidoP = new System.Windows.Forms.Label();
-            this.lblApellidoM = new System.Windows.Forms.Label();
-            this.lblCarrera = new System.Windows.Forms.Label();
-            this.lblGrado = new System.Windows.Forms.Label();
-            this.lblModalidad = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.txtMatricula = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellidoP = new System.Windows.Forms.TextBox();
-            this.txtapellidoM = new System.Windows.Forms.TextBox();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.cboCarrera = new System.Windows.Forms.ComboBox();
-            this.cboGrado = new System.Windows.Forms.ComboBox();
             this.cboModalidad = new System.Windows.Forms.ComboBox();
+            this.cboGrado = new System.Windows.Forms.ComboBox();
+            this.cboCarrera = new System.Windows.Forms.ComboBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtapellidoM = new System.Windows.Forms.TextBox();
+            this.txtApellidoP = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblModalidad = new System.Windows.Forms.Label();
+            this.lblGrado = new System.Windows.Forms.Label();
+            this.lblCarrera = new System.Windows.Forms.Label();
+            this.lblApellidoM = new System.Windows.Forms.Label();
+            this.lblApellidoP = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblMatricula = new System.Windows.Forms.Label();
             this.groupBoxNuevoAlumno.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,126 +73,14 @@
             this.groupBoxNuevoAlumno.TabStop = false;
             this.groupBoxNuevoAlumno.Text = "Nuevo Alumno";
             // 
-            // lblMatricula
+            // cboModalidad
             // 
-            this.lblMatricula.AutoSize = true;
-            this.lblMatricula.Location = new System.Drawing.Point(51, 36);
-            this.lblMatricula.Name = "lblMatricula";
-            this.lblMatricula.Size = new System.Drawing.Size(53, 13);
-            this.lblMatricula.TabIndex = 0;
-            this.lblMatricula.Text = "Matricula:";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(51, 78);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(63, 13);
-            this.lblNombre.TabIndex = 1;
-            this.lblNombre.Text = "Nombres(s):";
-            // 
-            // lblApellidoP
-            // 
-            this.lblApellidoP.AutoSize = true;
-            this.lblApellidoP.Location = new System.Drawing.Point(51, 122);
-            this.lblApellidoP.Name = "lblApellidoP";
-            this.lblApellidoP.Size = new System.Drawing.Size(87, 13);
-            this.lblApellidoP.TabIndex = 2;
-            this.lblApellidoP.Text = "Apellido Paterno:";
-            // 
-            // lblApellidoM
-            // 
-            this.lblApellidoM.AutoSize = true;
-            this.lblApellidoM.Location = new System.Drawing.Point(53, 172);
-            this.lblApellidoM.Name = "lblApellidoM";
-            this.lblApellidoM.Size = new System.Drawing.Size(89, 13);
-            this.lblApellidoM.TabIndex = 3;
-            this.lblApellidoM.Text = "Apellido Materno:";
-            // 
-            // lblCarrera
-            // 
-            this.lblCarrera.AutoSize = true;
-            this.lblCarrera.Location = new System.Drawing.Point(53, 222);
-            this.lblCarrera.Name = "lblCarrera";
-            this.lblCarrera.Size = new System.Drawing.Size(44, 13);
-            this.lblCarrera.TabIndex = 4;
-            this.lblCarrera.Text = "Carrera:";
-            // 
-            // lblGrado
-            // 
-            this.lblGrado.AutoSize = true;
-            this.lblGrado.Location = new System.Drawing.Point(53, 272);
-            this.lblGrado.Name = "lblGrado";
-            this.lblGrado.Size = new System.Drawing.Size(39, 13);
-            this.lblGrado.TabIndex = 5;
-            this.lblGrado.Text = "Grado:";
-            // 
-            // lblModalidad
-            // 
-            this.lblModalidad.AutoSize = true;
-            this.lblModalidad.Location = new System.Drawing.Point(51, 322);
-            this.lblModalidad.Name = "lblModalidad";
-            this.lblModalidad.Size = new System.Drawing.Size(59, 13);
-            this.lblModalidad.TabIndex = 6;
-            this.lblModalidad.Text = "Modalidad:";
-            // 
-            // lblCorreo
-            // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(51, 371);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(97, 13);
-            this.lblCorreo.TabIndex = 7;
-            this.lblCorreo.Text = "Correo Electronico:";
-            // 
-            // txtMatricula
-            // 
-            this.txtMatricula.Location = new System.Drawing.Point(280, 29);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(100, 20);
-            this.txtMatricula.TabIndex = 8;
-            this.txtMatricula.TextChanged += new System.EventHandler(this.txtMatricula_TextChanged);
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(280, 75);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(160, 20);
-            this.txtNombre.TabIndex = 9;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
-            // 
-            // txtApellidoP
-            // 
-            this.txtApellidoP.Location = new System.Drawing.Point(280, 115);
-            this.txtApellidoP.Name = "txtApellidoP";
-            this.txtApellidoP.Size = new System.Drawing.Size(160, 20);
-            this.txtApellidoP.TabIndex = 10;
-            this.txtApellidoP.TextChanged += new System.EventHandler(this.txtApellidoP_TextChanged);
-            // 
-            // txtapellidoM
-            // 
-            this.txtapellidoM.Location = new System.Drawing.Point(280, 165);
-            this.txtapellidoM.Name = "txtapellidoM";
-            this.txtapellidoM.Size = new System.Drawing.Size(160, 20);
-            this.txtapellidoM.TabIndex = 11;
-            this.txtapellidoM.TextChanged += new System.EventHandler(this.txtapellidoM_TextChanged);
-            // 
-            // txtCorreo
-            // 
-            this.txtCorreo.Location = new System.Drawing.Point(280, 364);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(237, 20);
-            this.txtCorreo.TabIndex = 12;
-            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
-            // 
-            // cboCarrera
-            // 
-            this.cboCarrera.FormattingEnabled = true;
-            this.cboCarrera.Location = new System.Drawing.Point(280, 214);
-            this.cboCarrera.Name = "cboCarrera";
-            this.cboCarrera.Size = new System.Drawing.Size(121, 21);
-            this.cboCarrera.TabIndex = 13;
-            this.cboCarrera.SelectedIndexChanged += new System.EventHandler(this.cboCarrera_SelectedIndexChanged);
+            this.cboModalidad.FormattingEnabled = true;
+            this.cboModalidad.Location = new System.Drawing.Point(280, 314);
+            this.cboModalidad.Name = "cboModalidad";
+            this.cboModalidad.Size = new System.Drawing.Size(121, 21);
+            this.cboModalidad.TabIndex = 15;
+            this.cboModalidad.SelectedIndexChanged += new System.EventHandler(this.cboModalidad_SelectedIndexChanged);
             // 
             // cboGrado
             // 
@@ -203,14 +91,126 @@
             this.cboGrado.TabIndex = 14;
             this.cboGrado.SelectedIndexChanged += new System.EventHandler(this.cboGrado_SelectedIndexChanged);
             // 
-            // cboModalidad
+            // cboCarrera
             // 
-            this.cboModalidad.FormattingEnabled = true;
-            this.cboModalidad.Location = new System.Drawing.Point(280, 314);
-            this.cboModalidad.Name = "cboModalidad";
-            this.cboModalidad.Size = new System.Drawing.Size(121, 21);
-            this.cboModalidad.TabIndex = 15;
-            this.cboModalidad.SelectedIndexChanged += new System.EventHandler(this.cboModalidad_SelectedIndexChanged);
+            this.cboCarrera.FormattingEnabled = true;
+            this.cboCarrera.Location = new System.Drawing.Point(280, 214);
+            this.cboCarrera.Name = "cboCarrera";
+            this.cboCarrera.Size = new System.Drawing.Size(121, 21);
+            this.cboCarrera.TabIndex = 13;
+            this.cboCarrera.SelectedIndexChanged += new System.EventHandler(this.cboCarrera_SelectedIndexChanged);
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Location = new System.Drawing.Point(280, 364);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(237, 20);
+            this.txtCorreo.TabIndex = 12;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
+            // 
+            // txtapellidoM
+            // 
+            this.txtapellidoM.Location = new System.Drawing.Point(280, 165);
+            this.txtapellidoM.Name = "txtapellidoM";
+            this.txtapellidoM.Size = new System.Drawing.Size(160, 20);
+            this.txtapellidoM.TabIndex = 11;
+            this.txtapellidoM.TextChanged += new System.EventHandler(this.txtapellidoM_TextChanged);
+            // 
+            // txtApellidoP
+            // 
+            this.txtApellidoP.Location = new System.Drawing.Point(280, 115);
+            this.txtApellidoP.Name = "txtApellidoP";
+            this.txtApellidoP.Size = new System.Drawing.Size(160, 20);
+            this.txtApellidoP.TabIndex = 10;
+            this.txtApellidoP.TextChanged += new System.EventHandler(this.txtApellidoP_TextChanged);
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(280, 75);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(160, 20);
+            this.txtNombre.TabIndex = 9;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            // 
+            // txtMatricula
+            // 
+            this.txtMatricula.Location = new System.Drawing.Point(280, 29);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(100, 20);
+            this.txtMatricula.TabIndex = 8;
+            this.txtMatricula.TextChanged += new System.EventHandler(this.txtMatricula_TextChanged);
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Location = new System.Drawing.Point(51, 371);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(97, 13);
+            this.lblCorreo.TabIndex = 7;
+            this.lblCorreo.Text = "Correo Electronico:";
+            // 
+            // lblModalidad
+            // 
+            this.lblModalidad.AutoSize = true;
+            this.lblModalidad.Location = new System.Drawing.Point(51, 322);
+            this.lblModalidad.Name = "lblModalidad";
+            this.lblModalidad.Size = new System.Drawing.Size(59, 13);
+            this.lblModalidad.TabIndex = 6;
+            this.lblModalidad.Text = "Modalidad:";
+            // 
+            // lblGrado
+            // 
+            this.lblGrado.AutoSize = true;
+            this.lblGrado.Location = new System.Drawing.Point(53, 272);
+            this.lblGrado.Name = "lblGrado";
+            this.lblGrado.Size = new System.Drawing.Size(39, 13);
+            this.lblGrado.TabIndex = 5;
+            this.lblGrado.Text = "Grado:";
+            // 
+            // lblCarrera
+            // 
+            this.lblCarrera.AutoSize = true;
+            this.lblCarrera.Location = new System.Drawing.Point(53, 222);
+            this.lblCarrera.Name = "lblCarrera";
+            this.lblCarrera.Size = new System.Drawing.Size(44, 13);
+            this.lblCarrera.TabIndex = 4;
+            this.lblCarrera.Text = "Carrera:";
+            // 
+            // lblApellidoM
+            // 
+            this.lblApellidoM.AutoSize = true;
+            this.lblApellidoM.Location = new System.Drawing.Point(53, 172);
+            this.lblApellidoM.Name = "lblApellidoM";
+            this.lblApellidoM.Size = new System.Drawing.Size(89, 13);
+            this.lblApellidoM.TabIndex = 3;
+            this.lblApellidoM.Text = "Apellido Materno:";
+            // 
+            // lblApellidoP
+            // 
+            this.lblApellidoP.AutoSize = true;
+            this.lblApellidoP.Location = new System.Drawing.Point(51, 122);
+            this.lblApellidoP.Name = "lblApellidoP";
+            this.lblApellidoP.Size = new System.Drawing.Size(87, 13);
+            this.lblApellidoP.TabIndex = 2;
+            this.lblApellidoP.Text = "Apellido Paterno:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(51, 78);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(63, 13);
+            this.lblNombre.TabIndex = 1;
+            this.lblNombre.Text = "Nombres(s):";
+            // 
+            // lblMatricula
+            // 
+            this.lblMatricula.AutoSize = true;
+            this.lblMatricula.Location = new System.Drawing.Point(51, 36);
+            this.lblMatricula.Name = "lblMatricula";
+            this.lblMatricula.Size = new System.Drawing.Size(53, 13);
+            this.lblMatricula.TabIndex = 0;
+            this.lblMatricula.Text = "Matricula:";
             // 
             // RegistrarAlumno
             // 
@@ -220,6 +220,7 @@
             this.Controls.Add(this.groupBoxNuevoAlumno);
             this.IsMdiContainer = true;
             this.Name = "RegistrarAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Alumno";
             this.groupBoxNuevoAlumno.ResumeLayout(false);
             this.groupBoxNuevoAlumno.PerformLayout();

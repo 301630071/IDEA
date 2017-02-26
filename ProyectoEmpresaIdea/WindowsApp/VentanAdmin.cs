@@ -21,5 +21,11 @@ namespace WindowsApp
         {
 
         }
+
+        private void nuevoAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrarAlumno m = new RegistrarAlumno();           
+            m.Show();
+        }
     }
 }
