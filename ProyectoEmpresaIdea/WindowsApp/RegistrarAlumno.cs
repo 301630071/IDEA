@@ -23,6 +23,7 @@ namespace WindowsApp
             cboCarrera.Items.Add("ENERGIAS RENOVABLES");
             cboCarrera.Items.Add("NANOTECNOLOGIA");
             cboCarrera.Items.Add("DESARROLLO DE NEGOCIOS");
+            cboCarrera.Items.Add("MANTENIMIENTO");
 
             cboGrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cboGrado.Items.Add("PRIMERO");
