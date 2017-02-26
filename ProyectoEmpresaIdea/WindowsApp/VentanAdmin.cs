@@ -16,5 +16,10 @@ namespace WindowsApp
         {
             InitializeComponent();
         }
+
+        private void VentanAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
