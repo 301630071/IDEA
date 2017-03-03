@@ -11,11 +11,15 @@ namespace BussinessLogicLayer
     public class UsuarioBLL
     {
         #region iniciarSesion
-        public static string iniciarSesion(int matricula, string pwd)
+        public static string iniciarSesion(string matricula, string pwd)
         {
             //Validación 1. 
             //Verificar si el metodo viene con datos
-
+            if (string.IsNullOrEmpty(matricula))
+            {
+                return "Falta ingresar la Matricula";
+            }
+      
             if (string.IsNullOrEmpty(pwd))
             {
                 return "Falta ingresar la contraseña";
@@ -58,12 +62,13 @@ namespace BussinessLogicLayer
 
         }
         #endregion
-      public static string Registrar (int mat, string nom, string ap1, string ap2, string car, string gra, string  pwd1, string pwd2, string cor)
+      public static string Registrar (string mat, string nom, string ap1, string ap2, string car, string gra, string  pwd1, string pwd2, string cor)
         {
             //Validación 1. 
             //Verificar si el metodo viene con datos
             string msg1 = "Usuario Registrado";
-            
+
+
             if (string.IsNullOrEmpty(nom))
             {
                 return "Falta ingresar el Nombre";

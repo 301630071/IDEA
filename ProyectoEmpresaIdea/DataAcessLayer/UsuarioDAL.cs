@@ -14,7 +14,7 @@ namespace DataAcessLayer
         private static IdeaContext db = new IdeaContext();
         public static string CONNECTIONSTRING = "server=localhost;user id=root;pwd=melapelas5225.;persistsecurityinfo=True;database=idea";
         #region iniciarSesion
-        public static bool iniciarSesion(int matricula, string pwd)
+        public static bool iniciarSesion(string matricula, string pwd)
         {
             //SELECT COUNT (*) FROM Usuario WHERE Matricula = usuario AND Password1 = pass
             //return db.Usuarios.Where(u => u.Matricula == user && u.Password1 == pass).Count() > 0;

@@ -20,7 +20,7 @@ namespace WindowsApp
 
         private void btniniciar_Click(object sender, EventArgs e)
         {
-            int matricula = Convert.ToInt32(txtMatricula.Text);
+            string matricula = txtMatricula.Text;
             string contraseña = txtPassword.Text.ToString();
             string mensaje = BussinessLogicLayer.UsuarioBLL.iniciarSesion(matricula, contraseña);
 
