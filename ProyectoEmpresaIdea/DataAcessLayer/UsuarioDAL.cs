@@ -13,6 +13,7 @@ namespace DataAcessLayer
         // Clase contexto que enlaza la Base de Datos por entity framework
         private static IdeaContext db = new IdeaContext();
         public static string CONNECTIONSTRING = "server=localhost;user id=root;pwd=melapelas5225.;persistsecurityinfo=True;database=idea";
+
         #region iniciarSesion
         public static bool iniciarSesion(string matricula, string pwd)
         {
@@ -60,6 +61,7 @@ namespace DataAcessLayer
         }
         #endregion
 
+
         #region Registrar
         public static bool Registrar(Usuario u)
         {
@@ -74,7 +76,7 @@ namespace DataAcessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @password1, @password2, @correo )";
+                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, Password1, Password2, Correo, Grado) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @password1, @password2, @correo, @grado )";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
@@ -88,6 +90,9 @@ namespace DataAcessLayer
                 cmd.Parameters.AddWithValue("@password1", u.Password1);
                 cmd.Parameters.AddWithValue("@password2", u.Password2);
                 cmd.Parameters.AddWithValue("@correo", u.Correo);
+                cmd.Parameters.AddWithValue("@campus", u.IdCampus);
+                cmd.Parameters.AddWithValue("@carrera", u.IdCarrera);
+                cmd.Parameters.AddWithValue("@grado", u.Grado);
                 //6° - Ejecutar el query y guardar el resultado
                 int ENQ = cmd.ExecuteNonQuery();
 

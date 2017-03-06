@@ -1,4 +1,5 @@
 ﻿#region Librerias
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace BussinessLogicLayer
             {
                 return "Falta ingresar la Matricula";
             }
-      
+
             if (string.IsNullOrEmpty(pwd))
             {
                 return "Falta ingresar la contraseña";
@@ -62,48 +63,82 @@ namespace BussinessLogicLayer
 
         }
         #endregion
-      public static string Registrar (string mat, string nom, string ap1, string ap2, string car, string gra, string  pwd1, string pwd2, string cor)
+        public static string Registrar(Usuario u)
         {
+             
             //Validación 1. 
             //Verificar si el metodo viene con datos
             string msg1 = "Usuario Registrado";
 
-
-            if (string.IsNullOrEmpty(nom))
+            if (string.IsNullOrEmpty(u.Matricula))
+            {
+                return "Falta ingresar la Matricula";
+            }
+            if (string.IsNullOrEmpty(u.Nombre))
             {
                 return "Falta ingresar el Nombre";
             }
-            if (string.IsNullOrEmpty(ap1))
+            if (string.IsNullOrEmpty(u.Apellido1))
             {
                 return "Falta ingresar el Apellido Paterno";
             }
-            if (string.IsNullOrEmpty(ap2))
+            if (string.IsNullOrEmpty(u.Apellido2))
             {
                 return "Falta ingresar el Apellido Materno";
             }
-            if (string.IsNullOrEmpty(car))
-            {
-                return "Falta seleccionar la carrera a la que perteneces";
-            }
-            if (string.IsNullOrEmpty(gra))
+            //if (string.IsNullOrEmpty(u.IdCarrera))
+            //{
+            //    return "Falta seleccionar la carrera a la que perteneces";
+            //}
+            if (string.IsNullOrEmpty(u.Grado))
             {
                 return "Falta seleccionar tu grado";
             }
-            if (string.IsNullOrEmpty(pwd1))
+            if (string.IsNullOrEmpty(u.Password1))
             {
                 return "Falta ingresar la contraseña";
             }
-            if (string.IsNullOrEmpty(pwd2))
+            if (string.IsNullOrEmpty(u.Password2))
             {
                 return "Falta reingresar la contraseña";
             }
-            if (string.IsNullOrEmpty(cor))
+            if (string.IsNullOrEmpty(u.Correo))
             {
                 return "Falta ingresar el Correo electronico";
             }
             else
             {
-                return "msg1";
+                //Validación 2.
+                //Verificar conexión con el Servidor
+                string msg;
+
+                msg = DataAcessLayer.ConnectionMySQL.iniciarConexion();
+
+                if (string.IsNullOrEmpty(msg))
+                {
+                    bool IsLogIn;
+
+
+                    //Conecto DataAccessLayer con BussinessLogicLayer
+                    IsLogIn = DataAcessLayer.UsuarioDAL.Registrar(u);
+
+
+                    //Validación 3. 
+                    //Verificar si el usuario existe en la base de datos
+                    if (IsLogIn)
+                    {
+                        return "";
+                    }
+                    else
+                    {
+                        return "El usuario ya existe";
+                    }
+
+                }
+                else
+                {
+                    return msg;
+                }
             }
         }
     }

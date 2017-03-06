@@ -20,6 +20,10 @@ namespace Entities
         public string Correo { get; set; }
         public int IdCampus { get; set; }
         public int IdCarrera { get; set; }
+        public string Grado { get; set; }
+        
+        
+
 
     }
 }
