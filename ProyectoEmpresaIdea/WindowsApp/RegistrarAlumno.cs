@@ -15,27 +15,27 @@ namespace WindowsApp
         public RegistrarAlumno()
         {
             InitializeComponent();
-            cboCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboCarrera.Items.Add("TICSI");
-            cboCarrera.Items.Add("QUIMICA");
-            cboCarrera.Items.Add("LENGUA INGLESA");
-            cboCarrera.Items.Add("MECATRONICA");
-            cboCarrera.Items.Add("ENERGIAS RENOVABLES");
-            cboCarrera.Items.Add("NANOTECNOLOGIA");
-            cboCarrera.Items.Add("DESARROLLO DE NEGOCIOS");
-            cboCarrera.Items.Add("MANTENIMIENTO");
+            //cboCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
+            //cboCarrera.Items.Add("TICSI");
+            //cboCarrera.Items.Add("QUIMICA");
+            //cboCarrera.Items.Add("LENGUA INGLESA");
+            //cboCarrera.Items.Add("MECATRONICA");
+            //cboCarrera.Items.Add("ENERGIAS RENOVABLES");
+            //cboCarrera.Items.Add("NANOTECNOLOGIA");
+            //cboCarrera.Items.Add("DESARROLLO DE NEGOCIOS");
+            //cboCarrera.Items.Add("MANTENIMIENTO");
 
-            cboGrado.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboGrado.Items.Add("PRIMERO");
-            cboGrado.Items.Add("SEGUNDO");
-            cboGrado.Items.Add("TERCERO");
-            cboGrado.Items.Add("CUARTO");
-            cboGrado.Items.Add("QUINTO");
-            cboGrado.Items.Add("SEXTO");
+            //cboGrado.DropDownStyle = ComboBoxStyle.DropDownList;
+            //cboGrado.Items.Add("PRIMERO");
+            //cboGrado.Items.Add("SEGUNDO");
+            //cboGrado.Items.Add("TERCERO");
+            //cboGrado.Items.Add("CUARTO");
+            //cboGrado.Items.Add("QUINTO");
+            //cboGrado.Items.Add("SEXTO");
 
-            cboModalidad.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboModalidad.Items.Add("BIS");
-            cboModalidad.Items.Add("TRADICIONAL");
+            //cboModalidad.DropDownStyle = ComboBoxStyle.DropDownList;
+            //cboModalidad.Items.Add("BIS");
+            //cboModalidad.Items.Add("TRADICIONAL");
 
         }
 

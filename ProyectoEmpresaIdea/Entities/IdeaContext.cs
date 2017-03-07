@@ -18,7 +18,7 @@ namespace Entities
         public DbSet<Usuario> Usuarios { get; set;}
         public DbSet<Campus> Campus { get; set; }
         public DbSet<Registro> Registros { get; set; }
-        public DbSet<Carrera> Carreraas { get; set; }
+        public DbSet<Carrera> Carreras { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
