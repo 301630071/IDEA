@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBoxNuevoAlumno = new System.Windows.Forms.GroupBox();
-            this.cboModalidad = new System.Windows.Forms.ComboBox();
             this.cboGrado = new System.Windows.Forms.ComboBox();
             this.cboCarrera = new System.Windows.Forms.ComboBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
@@ -38,7 +37,6 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
-            this.lblModalidad = new System.Windows.Forms.Label();
             this.lblGrado = new System.Windows.Forms.Label();
             this.lblCarrera = new System.Windows.Forms.Label();
             this.lblApellidoM = new System.Windows.Forms.Label();
@@ -50,7 +48,6 @@
             // 
             // groupBoxNuevoAlumno
             // 
-            this.groupBoxNuevoAlumno.Controls.Add(this.cboModalidad);
             this.groupBoxNuevoAlumno.Controls.Add(this.cboGrado);
             this.groupBoxNuevoAlumno.Controls.Add(this.cboCarrera);
             this.groupBoxNuevoAlumno.Controls.Add(this.txtCorreo);
@@ -59,7 +56,6 @@
             this.groupBoxNuevoAlumno.Controls.Add(this.txtNombre);
             this.groupBoxNuevoAlumno.Controls.Add(this.txtMatricula);
             this.groupBoxNuevoAlumno.Controls.Add(this.lblCorreo);
-            this.groupBoxNuevoAlumno.Controls.Add(this.lblModalidad);
             this.groupBoxNuevoAlumno.Controls.Add(this.lblGrado);
             this.groupBoxNuevoAlumno.Controls.Add(this.lblCarrera);
             this.groupBoxNuevoAlumno.Controls.Add(this.lblApellidoM);
@@ -72,15 +68,6 @@
             this.groupBoxNuevoAlumno.TabIndex = 0;
             this.groupBoxNuevoAlumno.TabStop = false;
             this.groupBoxNuevoAlumno.Text = "Nuevo Alumno";
-            // 
-            // cboModalidad
-            // 
-            this.cboModalidad.FormattingEnabled = true;
-            this.cboModalidad.Location = new System.Drawing.Point(280, 314);
-            this.cboModalidad.Name = "cboModalidad";
-            this.cboModalidad.Size = new System.Drawing.Size(121, 21);
-            this.cboModalidad.TabIndex = 15;
-            this.cboModalidad.SelectedIndexChanged += new System.EventHandler(this.cboModalidad_SelectedIndexChanged);
             // 
             // cboGrado
             // 
@@ -102,7 +89,7 @@
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(280, 364);
+            this.txtCorreo.Location = new System.Drawing.Point(282, 312);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(237, 20);
             this.txtCorreo.TabIndex = 12;
@@ -143,20 +130,11 @@
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(51, 371);
+            this.lblCorreo.Location = new System.Drawing.Point(53, 319);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(97, 13);
             this.lblCorreo.TabIndex = 7;
             this.lblCorreo.Text = "Correo Electronico:";
-            // 
-            // lblModalidad
-            // 
-            this.lblModalidad.AutoSize = true;
-            this.lblModalidad.Location = new System.Drawing.Point(51, 322);
-            this.lblModalidad.Name = "lblModalidad";
-            this.lblModalidad.Size = new System.Drawing.Size(59, 13);
-            this.lblModalidad.TabIndex = 6;
-            this.lblModalidad.Text = "Modalidad:";
             // 
             // lblGrado
             // 
@@ -235,7 +213,6 @@
         private System.Windows.Forms.Label lblApellidoP;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblMatricula;
-        private System.Windows.Forms.ComboBox cboModalidad;
         private System.Windows.Forms.ComboBox cboGrado;
         private System.Windows.Forms.ComboBox cboCarrera;
         private System.Windows.Forms.TextBox txtCorreo;
@@ -244,7 +221,6 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.Label lblCorreo;
-        private System.Windows.Forms.Label lblModalidad;
         private System.Windows.Forms.Label lblGrado;
         private System.Windows.Forms.Label lblCarrera;
     }

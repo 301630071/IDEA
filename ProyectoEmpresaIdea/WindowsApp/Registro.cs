@@ -28,22 +28,22 @@ namespace WindowsApp
         {
             InitializeComponent();
 
-            cboCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboCarrera.Items.Add("TICSI");
-            cboCarrera.Items.Add("QUIMICA");
-            cboCarrera.Items.Add("LENGUA INGLESA");
-            cboCarrera.Items.Add("MECATRONICA");
-            cboCarrera.Items.Add("ENERGIAS RENOVABLES");
-            cboCarrera.Items.Add("NANOTECNOLOGIA");
-            cboCarrera.Items.Add("DESARROLLO DE NEGOCIOS");
+            //cboCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
+            //cboCarrera.Items.Add("TICSI");
+            //cboCarrera.Items.Add("QUIMICA");
+            //cboCarrera.Items.Add("LENGUA INGLESA");
+            //cboCarrera.Items.Add("MECATRONICA");
+            //cboCarrera.Items.Add("ENERGIAS RENOVABLES");
+            //cboCarrera.Items.Add("NANOTECNOLOGIA");
+            //cboCarrera.Items.Add("DESARROLLO DE NEGOCIOS");
 
-            cboGrado.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboGrado.Items.Add("PRIMERO");
-            cboGrado.Items.Add("SEGUNDO");
-            cboGrado.Items.Add("TERCERO");
-            cboGrado.Items.Add("CUARTO");
-            cboGrado.Items.Add("QUINTO");
-            cboGrado.Items.Add("SEXTO");
+            //cboGrado.DropDownStyle = ComboBoxStyle.DropDownList;
+            //cboGrado.Items.Add("PRIMERO");
+            //cboGrado.Items.Add("SEGUNDO");
+            //cboGrado.Items.Add("TERCERO");
+            //cboGrado.Items.Add("CUARTO");
+            //cboGrado.Items.Add("QUINTO");
+            //cboGrado.Items.Add("SEXTO");
         }
 
         private void Registar_Load(object sender, EventArgs e)
