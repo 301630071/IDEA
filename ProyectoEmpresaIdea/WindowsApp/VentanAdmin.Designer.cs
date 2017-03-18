@@ -32,8 +32,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.entradaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entradaYSalidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,9 +52,7 @@
             // registrarToolStripMenuItem
             // 
             this.registrarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoAlumnoToolStripMenuItem,
-            this.entradaToolStripMenuItem,
-            this.salidaToolStripMenuItem});
+            this.nuevoAlumnoToolStripMenuItem});
             this.registrarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
             this.registrarToolStripMenuItem.Size = new System.Drawing.Size(73, 21);
@@ -65,21 +61,9 @@
             // nuevoAlumnoToolStripMenuItem
             // 
             this.nuevoAlumnoToolStripMenuItem.Name = "nuevoAlumnoToolStripMenuItem";
-            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.nuevoAlumnoToolStripMenuItem.Text = "Registrar Alumno";
             this.nuevoAlumnoToolStripMenuItem.Click += new System.EventHandler(this.nuevoAlumnoToolStripMenuItem_Click);
-            // 
-            // entradaToolStripMenuItem
-            // 
-            this.entradaToolStripMenuItem.Name = "entradaToolStripMenuItem";
-            this.entradaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.entradaToolStripMenuItem.Text = "Registrar Entrada";
-            // 
-            // salidaToolStripMenuItem
-            // 
-            this.salidaToolStripMenuItem.Name = "salidaToolStripMenuItem";
-            this.salidaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.salidaToolStripMenuItem.Text = "Registrar Salida";
             // 
             // catalogoToolStripMenuItem
             // 
@@ -131,7 +115,5 @@
         private System.Windows.Forms.ToolStripMenuItem catalogoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alumnosRegistradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem entradaYSalidaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem entradaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salidaToolStripMenuItem;
     }
 }
