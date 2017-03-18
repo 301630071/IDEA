@@ -1,5 +1,4 @@
-﻿using Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +12,7 @@ namespace WindowsApp
 {
     public partial class Registrar : Form
     {
-        static string Matricula;
+        static int Matricula;
         static string Nombre;
         static string ApellidoP;
         static string ApellidoM;
@@ -58,35 +57,30 @@ namespace WindowsApp
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            Matricula = txtMatricula.Text;
+            Matricula = Convert.ToInt32(txtMatricula.Text);
+            txtMatricula.Text = " ";
             Nombre = txtNombre.Text;
+            txtNombre.Text = " ";
             ApellidoP = txtApellidoP.Text;
+            txtApellidoP.Text = " ";
             ApellidoM = txtApellidoM.Text;
+            txtApellidoM.Text = " ";
             Carrera = cboCarrera.SelectedItem.ToString();
+            cboCarrera.SelectedIndex = -1;
             Grado = cboGrado.SelectedItem.ToString();
+            cboGrado.SelectedIndex = -1;
             Password1 = txtPassword1.Text;
+            txtPassword1.Text = "";
             Password2 = txtPassword2.Text;
+            txtPassword2.Text = "";
             Correo = txtCorreo.Text;
+            txtCorreo.Text = " ";
 
-            Usuario u = new Usuario();
-            u.Matricula = Matricula;
-            u.Nombre = Nombre;
-            u.Apellido1 = ApellidoP;
-            u.Apellido2 = ApellidoM;
-            u.Grado = Grado;
-            u.Password1 = Password1;
-            u.Password2 = Password2;
-            u.Correo = Correo;
-            string mensaje = BussinessLogicLayer.UsuarioBLL.Registrar(u);
 
-            if (string.IsNullOrEmpty(mensaje))
-            {
-                MessageBox.Show("Registro Exitoso");
-            }
-            else
-            {
-                MessageBox.Show(mensaje);
-            }
+
+
+            MessageBox.Show(Matricula + "\n" + Nombre + "\n" + ApellidoP + "\n" + ApellidoM
+                 + "\n" + Carrera + "\n" + Grado + "\n" + Correo + "\n" + Password1 + "\n" + Password2);
 
         }
 

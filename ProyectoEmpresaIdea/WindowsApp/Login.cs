@@ -44,10 +44,5 @@ namespace WindowsApp
             Registrar abrir = new Registrar();
             abrir.Show();
         }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
